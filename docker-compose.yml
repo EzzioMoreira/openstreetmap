@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  map:
+    image: omnilink/openstreetmap:1.0
+    volumes:
+      - $$HOME:/var/log/
+    ports:
+      - "80:80"
+    command: "run"
